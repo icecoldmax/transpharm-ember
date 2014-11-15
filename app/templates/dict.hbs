@@ -1,12 +1,13 @@
 <h1>Translate all the words!</h1>
 
-Eng:
-{{view Ember.Select content=model optionValuePath="content" optionLabelPath="content.eng" value=selectedEnglish}}
-<br />
+<p>
+  {{view Ember.Select content=pronouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngPronoun}}
+  {{view Ember.Select content=nouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngNoun}}
+  {{view Ember.Select content=verbs optionValuePath="content" optionLabelPath="content.eng" value=selectedEngVerb}}
+</p>
 
-Jap:
-{{inJap}}
-<br />
-
-Say it:
-{{sayIt}}
+<p>
+  {{pronounJap}}{{nounJap}}{{verbJap}}
+  <br />
+  {{pronounJapSay}} {{nounJapSay}} {{verbJapSay}}
+</p>
