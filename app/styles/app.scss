@@ -1,16 +1,25 @@
 html, body {
   text-align: center;
   font-family: sans-serif;
-  margin: 20px;
 
   #wrapper {
+    .section-link {
+      background-color: #eaeaea;
+      padding: 10px;
+      margin-top: 2px;
+
+    }
+    a {
+      text-decoration: none;
+      color: darkred;
+    }
   }
 
   .phrase-group {
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 2px;
     border: solid red 2px;
     border-radius: 5px;
+    color: #323232;
   }
 
   .selects {
@@ -20,5 +29,6 @@ html, body {
   }
 
   .pronunciation {
+    font-style: italic;
   }
 }

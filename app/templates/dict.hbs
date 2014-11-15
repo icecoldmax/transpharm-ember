@@ -1,9 +1,19 @@
-<div>
-  {{#link-to "dict.feelings"}}Feelings and Hurtings{{/link-to}}
+{{#link-to "dict.feelings"}}
+  <div id="feelings-link" class="section-link">
+    Feels and Hurts
+  </div>
+{{/link-to}}
+
+<div id="feelings">
   {{outlet "feelings"}}
 </div>
 
-<div>
-  {{#link-to "dict.diseases"}}Your Gross Diseases{{/link-to}}
+{{#link-to "dict.diseases"}}
+  <div id="diseases-link" class="section-link">
+    Your Gross Diseases
+  </div>
+{{/link-to}}
+
+<div id="diseases">
   {{outlet "diseases"}}
 </div>

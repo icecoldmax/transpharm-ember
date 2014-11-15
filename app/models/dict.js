@@ -12,7 +12,7 @@ export default Dict.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      eng: "my",
+      eng: "My",
       jap: "私の",
       say: "watashi no",
       type: "pronoun",
@@ -20,7 +20,7 @@ export default Dict.reopenClass({
     },
     {
       id: 2,
-      eng: "your",
+      eng: "Your",
       jap: "あなたの",
       say: "anata no",
       type: "pronoun",
