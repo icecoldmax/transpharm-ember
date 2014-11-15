@@ -19,7 +19,7 @@ export default Dict.reopenClass({
       id: 2,
       eng: "Goodbye",
       jap: "さようなら",
-      say: "sayounara"
+      say: "sayōnara"
     }
   ]
 });
