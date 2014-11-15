@@ -1,13 +1,9 @@
-<h1>Translate all the words!</h1>
+<div>
+  {{#link-to "dict.feelings"}}Feelings and Hurtings{{/link-to}}
+  {{outlet "feelings"}}
+</div>
 
-<p>
-  {{view Ember.Select content=pronouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngPronoun}}
-  {{view Ember.Select content=nouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngNoun}}
-  {{view Ember.Select content=verbs optionValuePath="content" optionLabelPath="content.eng" value=selectedEngVerb}}
-</p>
-
-<p>
-  {{pronounJap}}{{nounJap}}{{verbJap}}
-  <br />
-  {{pronounJapSay}} {{nounJapSay}} {{verbJapSay}}
-</p>
+<div>
+  {{#link-to "dict.diseases"}}Your Gross Diseases{{/link-to}}
+  {{outlet "diseases"}}
+</div>

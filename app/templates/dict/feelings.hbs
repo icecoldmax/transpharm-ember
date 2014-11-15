@@ -1,0 +1,18 @@
+<div class="phrase-group" id="feelings">
+  <h2>Feelings and Hurtings</h2>
+
+  <p class="selects">
+    {{view Ember.Select content=pronouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngPronoun}}
+    {{view Ember.Select content=nouns optionValuePath="content" optionLabelPath="content.eng" value=selectedEngNoun}}
+    {{view Ember.Select content=verbs optionValuePath="content" optionLabelPath="content.eng" value=selectedEngVerb}}
+  </p>
+
+  <p class="translation">
+    {{pronounJap}}{{nounJap}}{{verbJap}}
+  </p>
+
+  <p class="pronunciation">
+    {{pronounJapSay}} {{nounJapSay}} {{verbJapSay}}
+  </p>
+</div>
+

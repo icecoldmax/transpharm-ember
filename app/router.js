@@ -6,7 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource("dict", { path: "/" });
+  this.resource("dict", { path: "/" }, function() {
+    this.route("feelings");
+    this.route("diseases");
+  });
 });
 
 export default Router;
