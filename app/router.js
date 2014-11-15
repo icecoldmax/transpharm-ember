@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource("dict", { path: "/" }, function() {
     this.route("feelings");
     this.route("diseases");
+    this.route("medicines");
   });
 });
 

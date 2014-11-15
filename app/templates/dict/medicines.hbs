@@ -1,0 +1,14 @@
+<div class="phrase-group" id="medicines">
+  <p class="selects">
+    {{view Ember.Select content=needPronouns optionValuePath="content" optionLabelPath="content.eng" value=selectedNeedPronounEng}}
+    {{view Ember.Select content=medicineNouns optionValuePath="content" optionLabelPath="content.eng" value=selectedMedicineNounEng}}
+  </p>
+
+  <p class="translation">
+    {{needPronounJap}}{{medicineNounJap}}が必要です！
+  </p>
+
+  <p class="pronunciation">
+    {{needPronounJapSay}} {{medicineNounJapSay}} ga hitsuyō desu!
+  </p>
+</div>
