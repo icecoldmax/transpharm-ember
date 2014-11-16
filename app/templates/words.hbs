@@ -5,14 +5,28 @@
     <th>Pronunciation</th>
     <th>Type</th>
     <th>Category</th>
+    <th class="edit"></th>
+    <th class="delete"></th>
   </tr>
 
-  {{#each word in controller}}
-    <tr>
-      <td>{{word.eng}}</td>
-      <td>{{word.jap}}</td>
-      <td>{{word.say}}</td>
-      <td>{{word.type}}</td>
-      <td>{{word.category}}</td>
-    {{/each}}
+  {{#each word in controller itemController="word"}}
+    <tr {{bind-attr class="word.isEditing:editing"}}>
+      {{#if word.isEditing}}
+        <td>{{view Ember.TextField value=word.eng}}</td>
+        <td>{{view Ember.TextField value=word.jap}}</td>
+        <td>{{view Ember.TextField value=word.say}}</td>
+        <td>{{view Ember.TextField value=word.type}}</td>
+        <td>{{view Ember.TextField value=word.category}}</td>
+        <td><button {{action "acceptChanges"}}>Save</button></td>
+      {{else}}
+        <td {{word.eng}}</td>
+        <td {{word.jap}}</td>
+        <td {{word.say}}</td>
+        <td {{word.type}}</td>
+        <td {{word.category}}</td>
+        <td><button {{action "editWord"}}>Edit</button></td>
+        <td><button {{action "deleteWord"}}>Delete</button></td>
+      {{/if}}
+    </tr>
+  {{/each}}
 </table>

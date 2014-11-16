@@ -48,11 +48,23 @@ html, body {
       }
     }
 
-    #words {
+    table#words {
       text-align: left;
       font-size: 13px;
+      tr.editing {
+        input {
+          width: 85px;
+        }
+      }
       th {
-        width: 20%;
+        width: 19%;
+
+        &.edit {
+          width: 2%;
+        }
+        &.delete {
+          width: 3%;
+        }
       }
     }
   }
