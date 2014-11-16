@@ -12,6 +12,8 @@ Router.map(function() {
     this.route("medicines");
     this.route("new");
   });
+
+  this.resource("words", { path: "/words" });
 });
 
 export default Router;

@@ -47,5 +47,13 @@ html, body {
         }
       }
     }
+
+    #words {
+      text-align: left;
+      font-size: 13px;
+      th {
+        width: 20%;
+      }
+    }
   }
 }

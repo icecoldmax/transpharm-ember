@@ -1,0 +1,18 @@
+<table id="words">
+  <tr>
+    <th>English</th>
+    <th>Japanese</th>
+    <th>Pronunciation</th>
+    <th>Type</th>
+    <th>Category</th>
+  </tr>
+
+  {{#each word in controller}}
+    <tr>
+      <td>{{word.eng}}</td>
+      <td>{{word.jap}}</td>
+      <td>{{word.say}}</td>
+      <td>{{word.type}}</td>
+      <td>{{word.category}}</td>
+    {{/each}}
+</table>
