@@ -1,0 +1,35 @@
+<div class="phrase-group" id="new">
+<form {{action "createWord" on="submit"}}>
+    <table id="new-table">
+      <tr>
+        <th>English</th>
+        <td>{{view Ember.TextField value=fields.eng}}</td>
+      </tr>
+
+      <tr>
+        <th>Japanese</th>
+        <td>{{view Ember.TextField value=fields.jap}}</td>
+      </tr>
+
+      <tr>
+        <th>Say It</th>
+        <td>{{view Ember.TextField value=fields.say}}</td>
+      </tr>
+
+      <tr>
+        <th>Type</th>
+        <td>{{view Ember.TextField value=fields.type}}</td>
+      </tr>
+
+      <tr>
+        <th>Category</th>
+        <td>{{view Ember.TextField value=fields.category}}</td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td><button type="submit">Add Word</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

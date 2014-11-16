@@ -7,28 +7,43 @@ html, body {
       background-color: #eaeaea;
       padding: 10px;
       margin-top: 2px;
-
     }
+
     a {
       text-decoration: none;
       color: darkred;
     }
-  }
 
-  .phrase-group {
-    margin-top: 2px;
-    border: solid #b40000 2px;
-    border-radius: 5px;
-    color: #323232;
-  }
+    .phrase-group {
+      margin-top: 2px;
+      border: solid #b40000 2px;
+      border-radius: 5px;
+      color: #323232;
+    }
 
-  .selects {
-  }
+    .selects {
+    }
 
-  .translation {
-  }
+    .translation {
+    }
 
-  .pronunciation {
-    font-style: italic;
+    .pronunciation {
+      font-style: italic;
+    }
+
+    #new {
+      table {
+        color: #323232;
+
+        th {
+          font-size: 0.8em;
+        }
+        margin: 5px auto;
+        text-align: left;
+        input {
+          margin: 2px auto;
+        }
+      }
+    }
   }
 }
