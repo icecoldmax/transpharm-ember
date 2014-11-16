@@ -9,6 +9,15 @@
     <th class="delete"></th>
   </tr>
 
+  <tr>
+    <td>{{view Ember.TextField value=fields.eng placeholder="English"}}</td>
+    <td>{{view Ember.TextField value=fields.jap placeholder="Japanese"}}</td>
+    <td>{{view Ember.TextField value=fields.say placeholder="Pronunciation"}}</td>
+    <td>{{view Ember.TextField value=fields.type placeholder="Type (noun, verb...)"}}</td>
+    <td>{{view Ember.TextField value=fields.category placeholder="Category (body, disease...)"}}</td>
+    <td><button {{action "createWord"}}>Add</button></td>
+  </tr>
+
   {{#each word in controller itemController="word"}}
     <tr {{bind-attr class="word.isEditing:editing"}}>
       {{#if word.isEditing}}

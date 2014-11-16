@@ -10,7 +10,6 @@ Router.map(function() {
     this.route("feelings");
     this.route("diseases");
     this.route("medicines");
-    this.route("new");
   });
 
   this.resource("words", { path: "/words" });
