@@ -24,13 +24,20 @@ html, body {
     }
 
     .selects {
+      select {
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+      }
     }
 
     .translation {
+      font-size: 1.8em;
     }
 
     .pronunciation {
       font-style: italic;
+      font-size: 1.3em;
     }
 
     #new {
@@ -51,10 +58,8 @@ html, body {
     table#words {
       text-align: left;
       font-size: 13px;
-      tr.editing {
-        input {
-          width: 85px;
-        }
+      input {
+        width: 85px;
       }
       th {
         width: 19%;

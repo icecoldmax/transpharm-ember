@@ -1,4 +1,6 @@
-# Transpharm-ember
+# TransPharm
+
+## Tell the world about your disgusting medical issues, in Japanese!
 
 This README outlines the details of collaborating on this Ember application.
 
